@@ -308,8 +308,16 @@
             </div>
         </div>
     </div>
+    <div class="flex justify-center">
+        <div class="text-center mt-6 text-pink-400 font-semibold border-2 px-3 py-3 bg-pink-200 w-80 rounded-full">
+            <footer class="text-center">
+                <p>&copy; พัฒนาโดย ❤️ ครูอั๋น ใจดี ❤️ <span id="year"></span></p>
+            </footer>
+        </div>
+    </div>
 
     <script>
+        document.getElementById('year').innerText = new Date().getFullYear()
         function showToast(message, type = 'success') {
             const toastContainer = document.getElementById('toast-container');
             const toast = document.createElement('div');
